@@ -219,7 +219,7 @@ public final class GitHubNotificationContext {
             if (Result.SUCCESS.equals(result)) {
                 return GHCommitState.SUCCESS;
             } else if (Result.UNSTABLE.equals(result)) {
-                return GHCommitState.FAILURE;
+                return GHCommitState.SUCCESS;
             } else if (Result.FAILURE.equals(result)) {
                 return GHCommitState.ERROR;
             } else if (Result.ABORTED.equals(result)) {
